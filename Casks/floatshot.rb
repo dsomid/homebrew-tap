@@ -1,6 +1,6 @@
 cask "floatshot" do
-  version "1.3.0"
-  sha256 "046e40a1815e0033fcd09d1562b7a1fa4454311d66bcec24de3b80d376cbaf1d"
+  version "1.6.0"
+  sha256 "e7c6c415dddd76a26125a70a631fbc7459c3774329d4af11b8961574a7006f2b"
 
   url "https://github.com/dsomid/FloatShot/releases/download/v#{version}/FloatShot-#{version}.dmg"
   name "FloatShot"
