@@ -1,10 +1,10 @@
 cask "floatshot" do
-  version "1.1.0"
-  sha256 "4bbe72d459b3c5a5c9bd8a37fb543dbbb4e01e8f414d28e65e279582a9a9ac8a"
+  version "1.3.0"
+  sha256 "046e40a1815e0033fcd09d1562b7a1fa4454311d66bcec24de3b80d376cbaf1d"
 
   url "https://github.com/dsomid/FloatShot/releases/download/v#{version}/FloatShot-#{version}.dmg"
   name "FloatShot"
-  desc "Floating screenshots: capture a region, pin it on top, annotate, OCR, AirDrop"
+  desc "Floating screenshots and screen recording with annotation and OCR"
   homepage "https://github.com/dsomid/FloatShot"
 
   depends_on macos: :sonoma
