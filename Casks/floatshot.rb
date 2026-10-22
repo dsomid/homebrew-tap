@@ -7,15 +7,9 @@ cask "floatshot" do
   desc "Floating screenshots: capture a region, pin it on top, annotate, OCR, AirDrop"
   homepage "https://github.com/dsomid/FloatShot"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "FloatShot.app"
-
-  # FloatShot isn't notarized, so clear the quarantine flag to let it open.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/FloatShot.app"]
-  end
 
   uninstall quit: "com.omid.floatshot"
 
